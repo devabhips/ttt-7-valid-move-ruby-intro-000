@@ -8,8 +8,6 @@ def valid_move?(board, index)
 
   return false unless board[index] == ' X ' || board[index] == ' O '
 
-  return false unless board.nil?
-
   nil
 end
 
