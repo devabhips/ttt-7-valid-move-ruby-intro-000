@@ -2,8 +2,10 @@
 
 # code your #valid_move? method here
 def valid_move?(board, index)
-  return !board[index].nil? || board[index] == ' ' || board[index] == ''
-  return !(board[index] == ' X ' || board[index] == ' O ') && !board.nil?
+  return true if !board[index].nil? || board[index] == ' ' || board[index] == ''
+  return false unless board[index] == ' X ' || board[index] == ' O '
+  return false unless board.nil?
+
   nil
 end
 
