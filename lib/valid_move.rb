@@ -4,7 +4,6 @@
 def valid_move?(board, index)
   return !board[index].nil? || board[index] == ' ' || board[index] == ''
   return !(board[index] == ' X ' || board[index] == ' O ')
-
   nil
 end
 
